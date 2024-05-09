@@ -38,9 +38,8 @@ class MainMenuState extends MusicBeatState
 		'others'
 	];
 
+	var kk:FlxSprite;
 	var magenta:FlxSprite;
-	var camFollow:FlxObject;
-	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
 
 	override function create()
@@ -82,13 +81,13 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 		
-		var bg2:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuz/quadro'));
-		bg2.scrollFactor.set(0, yScroll);
-		bg2.setGraphicSize(Std.int(bg.width * 1.175));
-		bg2.updateHitbox();
-		bg2.screenCenter();
-		bg2.antialiasing = ClientPrefs.globalAntialiasing;
-		add(bg2);
+		kk = new FlxSprite(-80).loadGraphic(Paths.image('menuz/quadro'));
+		kk.scrollFactor.set(0, yScroll);
+		kk.setGraphicSize(Std.int(bg.width * 1.175));
+		kk.updateHitbox();
+		kk.screenCenter();
+		kk.antialiasing = ClientPrefs.globalAntialiasing;
+		add(kk);
 		
 		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuz/menuDesat'));
 		magenta.scrollFactor.set(0, yScroll);

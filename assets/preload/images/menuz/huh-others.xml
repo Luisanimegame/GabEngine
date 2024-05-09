@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="huh-others" width="266" height="129">
+  <SubTexture name="others white0000" x="0" y="0"  width="266" height="68" frameX="-993" frameY="-638" frameWidth="1286" frameHeight="730"/>
+  <SubTexture name="others basic0000" x="0" y="68"  width="197" height="61" frameX="-1062" frameY="-638" frameWidth="1286" frameHeight="730"/>
+</TextureAtlas>

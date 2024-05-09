@@ -75,7 +75,6 @@ class MainMenuState extends MusicBeatState
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
 		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuz/menuBG'));
 		bg.scrollFactor.set(0, yScroll);
-		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
@@ -83,7 +82,6 @@ class MainMenuState extends MusicBeatState
 		
 		kk = new FlxSprite(-80).loadGraphic(Paths.image('menuz/quadro'));
 		kk.scrollFactor.set(0, yScroll);
-		kk.setGraphicSize(Std.int(bg.width * 1.175));
 		kk.updateHitbox();
 		kk.screenCenter();
 		kk.antialiasing = ClientPrefs.globalAntialiasing;

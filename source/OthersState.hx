@@ -40,8 +40,6 @@ class OthersState extends MusicBeatState
 	];
 
 	var magenta:FlxSprite;
-	var camFollow:FlxObject;
-	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
 
 	override function create()
@@ -60,10 +58,6 @@ class OthersState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
-
-		camGame = new FlxCamera();
-		camAchievement = new FlxCamera();
-		camAchievement.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camAchievement, false);
@@ -124,17 +118,6 @@ class OthersState extends MusicBeatState
 			menuItem.updateHitbox();
 		}
 
-		FlxG.camera.follow(camFollowPos, null, 1);
-
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Gabz Engine v1.0.0", 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-
 		// NG.core.calls.event.logEvent('swag').send();
 
 		changeItem();
@@ -159,12 +142,6 @@ class OthersState extends MusicBeatState
 		super.create();
 	}
 
-	#if ACHIEVEMENTS_ALLOWED
-	// Unlocks "Freaky on a Friday Night" achievement
-	function giveAchievement() {
-		add(new AchievementObject('friday_night_play', camAchievement));
-		FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
-		trace('Giving achievement "friday_night_play"');
 	}
 	#end
 
@@ -179,8 +156,7 @@ class OthersState extends MusicBeatState
 		}
 
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
-		camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
-
+		
 		if (!selectedSomethin)
 		{
 			if (controls.UI_UP_P)
@@ -289,7 +265,6 @@ class OthersState extends MusicBeatState
 				if(menuItems.length > 4) {
 					add = menuItems.length * 8;
 				}
-				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y - add);
 				spr.centerOffsets();
 			}
 		});

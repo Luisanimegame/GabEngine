@@ -76,13 +76,6 @@ addAnimationByPrefix('SCORE', 'SCORE2', 'tally score0029', 24, true)
 objectPlayAnimation('SCORE', 'SCORE1', true) 
 setObjectCamera('SCORE', 'camother')
 addLuaSprite('SCORE', true)
-
-makeAnimatedLuaSprite('BOTON', 'button', 1150, 582.5);
-addAnimationByPrefix('BOTON', 'Pressed', 'Pressed', 12, false);
-addAnimationByPrefix('BOTON', 'nonPress', 'nonPress', 24, false);
-setObjectCamera('BOTON', 'camother');
-addLuaSprite('BOTON', true);
-
            
            makeLuaText('hit', "", 1000, -75, 158) 
            setObjectCamera('hit', 'camother')
@@ -158,7 +151,6 @@ doTweenAlpha('55', 'RESULTS', 0, 0.1, 'linear')
 doTweenAlpha('66', 'SOUND', 0, 0.1, 'linear')
 doTweenAlpha('77', 'RATINGS', 0, 0.1, 'linear')
 doTweenAlpha('88', 'SCORE', 0, 0.1, 'linear')
-doTweenAlpha('botonLOL', 'BOTON', 0, 0.1, 'linear') 
 
 doTweenAlpha('FIDDBU', 'diffsong', 0, 0.1, 'linear')
 doTweenAlpha('HITS1', 'hit', 0, 0.1, 'linear')
@@ -183,13 +175,10 @@ return Function_Continue;
 end
 function onUpdate(elapsed)
 if Activo == true then
-if (getMouseX('camHUD') > 1150 and getMouseX('camHUD') < 1280) and (getMouseY('camHUD') > 582.5 and getMouseY('camHUD') < 720 and mousePressed('left')) or keyPressed('enter') then 
-objectPlayAnimation('BOTON', 'Pressed', false);
+if mousePressed('left') or keyPressed('left') then 
 endSong() 
 Puto = true
 end
-else
-objectPlayAnimation('BOTON', 'nonPress', false);
 end
 
 local combo = getProperty('combo')

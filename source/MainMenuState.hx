@@ -274,7 +274,7 @@ class MainMenuState extends MusicBeatState
 			curSelected = 0;
 		if (curSelected < 0)
 			curSelected = menuItems.length - 1;
-			}
+			
 		});
 	}
 }

@@ -139,6 +139,11 @@ class OthersState extends MusicBeatState
 		addVirtualPad(UP_DOWN, A_B);
 		#end
 
+		super.create();
+	}
+
+	}
+	
 	var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)

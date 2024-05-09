@@ -142,8 +142,15 @@ class OthersState extends MusicBeatState
 		super.create();
 	}
 
+	//#if ACHIEVEMENTS_ALLOWED
+	// Unlocks "Freaky on a Friday Night" achievement
+	function giveAchievement() {
+		//add(new AchievementObject('friday_night_play', camAchievement));
+		//FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+		//trace('Giving achievement "friday_night_play"');
 	}
-	
+	#end
+
 	var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)

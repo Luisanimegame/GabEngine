@@ -100,19 +100,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 1;
 		option.changeValue = 0.1;
 		option.decimals = 1;
-		option.onChange = () ->
-		{
-			hitbox.alpha = curOption.getValue();
-			if (Controls.instance.mobileC) {
-				FlxG.sound.volumeUpKeys = [];
-				FlxG.sound.volumeDownKeys = [];
-				FlxG.sound.muteKeys = [];
-			} else {
-				FlxG.sound.volumeUpKeys = [FlxKey.PLUS, FlxKey.NUMPADPLUS];
-				FlxG.sound.volumeDownKeys = [FlxKey.MINUS, FlxKey.NUMPADMINUS];
-				FlxG.sound.muteKeys = [FlxKey.ZERO, FlxKey.NUMPADZERO];
-			}
-		};
+		option.onChange = hitbox.alpha = curOption.getValue();
 		addOption(option);
 
 		var option:Option = new Option('Rating Offset',

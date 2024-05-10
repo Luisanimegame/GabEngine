@@ -1,8 +1,8 @@
 {
 	"songs": [
-		["Bopeebo", "dad", [146, 113, 253]],
-		["Fresh", "dad", [146, 113, 253]],
-		["Dad Battle", "dad", [146, 113, 253]]
+		["Bopeebo", "daddypixel", [146, 113, 253]],
+		["Fresh", "daddypixel", [146, 113, 253]],
+		["DadBattle", "daddypixel", [146, 113, 253]]
 	],
 
 	"weekCharacters": [
@@ -14,6 +14,7 @@
 
 	"storyName": "Daddy Dearest",
 	"weekBefore": "tutorial",
+	"difficulties": "Easy, Normal, Hard, Erect",
 	"weekName": "Week 1",
 	"startUnlocked": true,
 

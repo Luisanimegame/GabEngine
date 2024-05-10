@@ -10,7 +10,7 @@ class NoteSplash extends FlxSprite
 	private var idleAnim:String;
 	private var textureLoaded:String = null;
 
-	public function new(x:Float = 150, y:Float = 170, ?note:Int = 0) {
+	public function new(x:Float = 0, y:Float = 0, ?note:Int = 0) {
 		super(x, y);
 
 		var skin:String = 'noteSplashes';
@@ -26,7 +26,7 @@ class NoteSplash extends FlxSprite
 	}
 
 	public function setupNoteSplash(x:Float, y:Float, note:Int = 0, texture:String = null, hueColor:Float = 0, satColor:Float = 0, brtColor:Float = 0) {
-		setPosition(x - Note.swagWidth * 0.95, y - Note.swagWidth);
+		setPosition(x - Note.swagWidth * 1.50, y - Note.swagWidth);
 		alpha = 0.6;
 
 		if(texture == null) {

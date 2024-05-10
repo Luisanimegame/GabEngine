@@ -24,11 +24,12 @@ class FlashingState extends MusicBeatState
 		add(bg);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Hey, watch out!\n
-			This Mod contains some flashing lights!\n
-			Press ENTER to disable them now or go to Options Menu.\n
-			Press ESCAPE to ignore this message.\n
-			You've been warned!",
+			"bah che, tudo bem?\n
+			essa Engine tem luzes piscantes, provavelmente não vou colocar\n
+			mas fica ai o aviso, bom, mesma coisa de sempre, eu acho\n
+			Aperte A (SPACE) Para matar as luzes\n
+			Aperte B (ESCAPE) para ignorar essa linda mensagem - Ass\n
+			GabeWuzzy, Boa Jogatina para você",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);

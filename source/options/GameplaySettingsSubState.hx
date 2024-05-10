@@ -89,6 +89,31 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		option.decimals = 1;
 		option.onChange = onChangeHitsoundVolume;
+		
+		var option:Option = new Option('HitboxAlpha',
+			'Bruh',
+			'hitboxAlpha',
+			'percent',
+			0);
+		option.scrollSpeed = 1;
+		option.minValue = 0.001;
+		option.maxValue = 1;
+		option.changeValue = 0.1;
+		option.decimals = 1;
+		option.onChange = () ->
+		{
+			hitbox.alpha = curOption.getValue();
+			if (Controls.instance.mobileC) {
+				FlxG.sound.volumeUpKeys = [];
+				FlxG.sound.volumeDownKeys = [];
+				FlxG.sound.muteKeys = [];
+			} else {
+				FlxG.sound.volumeUpKeys = [FlxKey.PLUS, FlxKey.NUMPADPLUS];
+				FlxG.sound.volumeDownKeys = [FlxKey.MINUS, FlxKey.NUMPADMINUS];
+				FlxG.sound.muteKeys = [FlxKey.ZERO, FlxKey.NUMPADZERO];
+			}
+		};
+		addOption(option);
 
 		var option:Option = new Option('Rating Offset',
 			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',

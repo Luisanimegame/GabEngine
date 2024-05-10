@@ -10,7 +10,7 @@ class NoteSplash extends FlxSprite
 	private var idleAnim:String;
 	private var textureLoaded:String = null;
 
-	public function new(x:Float = 100, y:Float = 100, ?note:Int = 0) {
+	public function new(x:Float = 150, y:Float = 170, ?note:Int = 0) {
 		super(x, y);
 
 		var skin:String = 'noteSplashes';

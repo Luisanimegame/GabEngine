@@ -25,9 +25,6 @@ function onCreate()
     setTextFont('ll', 'vcr.ttf')
     addLuaText('ll')
     
-    makeLuaSprite('bruhtime', 'hud/beep', 240, 640.50);
-	addLuaSprite('bruhtime', true)
-	
 	objectPlayAnimation('flp', 'normal');
 	setObjectCamera('flp', 'hud');
 	setObjectOrder('flp', 99999);
@@ -39,8 +36,6 @@ function onCreate()
 	setObjectOrder('k', 99999);
 	
 	setObjectOrder('ruh', 1);
-	
-	setObjectCamera('bruhtime', 'camother');
 end
 
 function onUpdatePost()

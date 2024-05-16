@@ -1036,14 +1036,6 @@ class PlayState extends MusicBeatState
 		add(timeTxt);
 		timeBarBG.sprTracker = timeBar;
 		
-		www = new AttachedSprite('hud/beep'), (timeBarBG.x + 4, timeBarBG.y + 4, LEFT_TO_RIGHT, Std.int(timeBarBG.width - 8), Std.int(timeBarBG.height - 8), this,
-			'songPercent', 0, 1);
-		www.scrollFactor.set();
-		www.numDivisions = 840; //How much lag this causes?? Should i tone it down to idk, 400 or 200?
-		www.alpha = 0;
-		www.visible = showTime;
-		add(www);
-
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
 		add(grpNoteSplashes);

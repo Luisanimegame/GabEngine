@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="BFHUD.png" width="942" height="953">
+  <SubTexture name="pika0002.png" x="0" y="0"  width="324" height="339" frameX="-1544" frameY="-40" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="pika0000.png" x="324" y="0"  width="304" height="337" frameX="-1553" frameY="-38" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0002.png" x="0" y="339"  width="335" height="296" frameX="-1523" frameY="-79" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0004.png" x="335" y="337"  width="333" height="298" frameX="-1525" frameY="-77" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0000.png" x="628" y="0"  width="314" height="322" frameX="-1544" frameY="-53" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0006.png" x="0" y="635"  width="316" height="318" frameX="-1542" frameY="-57" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="iconinicio0002.png" x="668" y="322"  width="135" height="107" frameX="-1336" frameY="-60" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="iconinicio0000.png" x="803" y="322"  width="133" height="107" frameX="-1337" frameY="-60" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="iconinicio0001.png" x="803" y="322"  width="133" height="107" frameX="-1337" frameY="-60" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="iconinicio0003.png" x="668" y="322"  width="135" height="107" frameX="-1336" frameY="-60" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0001.png" x="628" y="0"  width="314" height="322" frameX="-1544" frameY="-53" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0008.png" x="628" y="0"  width="314" height="322" frameX="-1544" frameY="-53" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0009.png" x="628" y="0"  width="314" height="322" frameX="-1544" frameY="-53" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0010.png" x="628" y="0"  width="314" height="322" frameX="-1544" frameY="-53" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0003.png" x="0" y="339"  width="335" height="296" frameX="-1523" frameY="-79" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0005.png" x="335" y="337"  width="333" height="298" frameX="-1525" frameY="-77" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="miss0007.png" x="0" y="635"  width="316" height="318" frameX="-1542" frameY="-57" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="pika0001.png" x="324" y="0"  width="304" height="337" frameX="-1553" frameY="-38" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="pika0003.png" x="0" y="0"  width="324" height="339" frameX="-1544" frameY="-40" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>

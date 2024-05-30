@@ -1,0 +1,4 @@
+V1: Onn = Ligar
+V1: Off = Desligar
+
+V2: Texto

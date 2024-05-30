@@ -11,6 +11,7 @@
 	"weekBackground": "stage",
 
 	"storyName": "",
+	"difficulties": "Learn",
 	"weekBefore": "tutorial",
 	"weekName": "Tutorial",
 	"startUnlocked": true,

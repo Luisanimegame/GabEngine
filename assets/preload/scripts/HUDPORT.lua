@@ -24,9 +24,6 @@ function onCreate()
     setTextSize('ll', 50)
     setTextFont('ll', 'vcr.ttf')
     addLuaText('ll')
-    
-    makeLuaSprite('bruhtime', 'hud/beep', 240, 640.50);
-	addLuaSprite('bruhtime', true)
 	
 	objectPlayAnimation('flp', 'normal');
 	setObjectCamera('flp', 'hud');
@@ -39,8 +36,6 @@ function onCreate()
 	setObjectOrder('k', 99999);
 	
 	setObjectOrder('ruh', 1);
-	
-	setObjectCamera('bruhtime', 'camother');
 end
 
 function onUpdatePost()
@@ -55,10 +50,4 @@ function onUpdate(elapsed)
 local combo = getProperty('combo')
 
 setTextString('ll', "" ..  hits)
-end
-
-function onStepHit()
-if curStep == 1 then
-doTweenX('bruhtime', 'bruhtime', 870, 2.6, 'expoout');
-end
 end

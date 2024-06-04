@@ -2,6 +2,7 @@ package;
 
 import Controls.Control;
 import flixel.FlxG;
+import flixel.math.FlxMath;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxSubState;

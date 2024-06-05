@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["Darnell", "darnell-pixel", [115, 94, 176]],
+		["Lit Up", "darnell-pixel", [115, 94, 176]],
+		["2Hot", "darnell-pixel", [115, 94, 176]],
+		["Blazin", "darnell-pixel", [115, 94, 176]]
+	],
+	
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "Hard",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Your New Week",
+	"weekName": "Custom Week",
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

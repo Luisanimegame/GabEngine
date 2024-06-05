@@ -1,0 +1,186 @@
+{
+	"song": {
+		"events": [
+			[
+				8901.0989010989,
+				[
+					[
+						"Play Animation",
+						"Light",
+						"Dad"
+					]
+				]
+			],
+			[
+				9560.43956043956,
+				[
+					[
+						"Play Animation",
+						"DODGE",
+						"Dad"
+					]
+				]
+			],
+			[
+				9890.10989010989,
+				[
+					[
+						"Play Animation",
+						"Knee",
+						"Dad"
+					]
+				]
+			],
+			[
+				40549.4505494506,
+				[
+					[
+						"Play Animation",
+						"Light",
+						"Dad"
+					]
+				]
+			],
+			[
+				41126.3736263736,
+				[
+					[
+						"Play Animation",
+						"DODGE",
+						"Dad"
+					]
+				]
+			],
+			[
+				41456.043956044,
+				[
+					[
+						"Play Animation",
+						"Knee",
+						"Dad"
+					]
+				]
+			],
+			[
+				51098.9010989011,
+				[
+					[
+						"Play Animation",
+						"Light",
+						"Dad"
+					]
+				]
+			],
+			[
+				51675.8241758242,
+				[
+					[
+						"Play Animation",
+						"DODGE",
+						"Dad"
+					]
+				]
+			],
+			[
+				52005.4945054945,
+				[
+					[
+						"Play Animation",
+						"Knee",
+						"Dad"
+					]
+				]
+			],
+			[
+				80027.4725274725,
+				[
+					[
+						"Play Animation",
+						"Light",
+						"Dad"
+					]
+				]
+			],
+			[
+				80686.8131868132,
+				[
+					[
+						"Play Animation",
+						"DODGE",
+						"Dad"
+					]
+				]
+			],
+			[
+				81016.4835164835,
+				[
+					[
+						"Play Animation",
+						"Knee",
+						"Dad"
+					]
+				]
+			],
+			[
+				85384.6153846154,
+				[
+					[
+						"Play Animation",
+						"Light",
+						"Dad"
+					]
+				]
+			],
+			[
+				85961.5384615385,
+				[
+					[
+						"Play Animation",
+						"DODGE",
+						"Dad"
+					]
+				]
+			],
+			[
+				86291.2087912088,
+				[
+					[
+						"Play Animation",
+						"Knee",
+						"Dad"
+					]
+				]
+			],
+			[
+				116950.54945055,
+				[
+					[
+						"Play Animation",
+						"Light",
+						"Dad"
+					]
+				]
+			],
+			[
+				117609.89010989,
+				[
+					[
+						"Play Animation",
+						"DODGE",
+						"Dad"
+					]
+				]
+			],
+			[
+				117939.560439561,
+				[
+					[
+						"Play Animation",
+						"Knee",
+						"Dad"
+					]
+				]
+			]
+		]
+	}
+}

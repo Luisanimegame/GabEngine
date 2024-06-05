@@ -43,9 +43,9 @@ class FreeplayAteuwuState extends MusicBeatState
 		if(!leftState) {
 			var back:Bool = controls.BACK;
 			if (controls.ACCEPT || back) {
-							MusicBeatState.switchState(new FreeplayState());
-				if(!back) {
 							MusicBeatState.switchState(new ExtraState());
+				if(!back) {
+							MusicBeatState.switchState(new FreeplayState());
 				}
 			}
 		}

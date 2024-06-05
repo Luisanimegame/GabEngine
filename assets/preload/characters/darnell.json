@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				1
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Pose Left0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-3
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Pose Down0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				5
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Pose Up0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				3
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Pose Right0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				-1
+			],
+			"fps": 24,
+			"anim": "Knee",
+			"indices": [],
+			"name": "Knee Forward"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				1
+			],
+			"fps": 24,
+			"anim": "Light",
+			"indices": [],
+			"name": "Light Can"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				9
+			],
+			"fps": 24,
+			"anim": "DODGE",
+			"indices": [],
+			"name": "Kick Up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/darnell",
+	"position": [
+		100,
+		20
+	],
+	"healthicon": "darnell",
+	"flip_x": false,
+	"healthbar_colors": [
+		115,
+		94,
+		176
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 8,
+	"scale": 1
+}

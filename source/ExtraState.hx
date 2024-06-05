@@ -245,7 +245,7 @@ class ExtraState extends MusicBeatState
 										LoadingState.loadAndSwitchState(new PlayState(), true);
 										FreeplayState.destroyFreeplayVocals();
 									case 'back':
-										MusicBeatState.switchState(new MainMenuState.hx());
+										MusicBeatState.switchState(new MainMenuState());
 								}
 							});
 						}

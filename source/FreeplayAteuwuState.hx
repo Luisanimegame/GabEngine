@@ -46,7 +46,6 @@ class FlashingState extends MusicBeatState
 							MusicBeatState.switchState(new FreeplayState());
 				if(!back) {
 							MusicBeatState.switchState(new ExtraState());
-						});
 					});
 				}
 			}

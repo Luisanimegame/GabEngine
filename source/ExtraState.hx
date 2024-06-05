@@ -23,7 +23,7 @@ import flixel.input.keyboard.FlxKey;
 
 using StringTools;
 
-class MainMenuState extends MusicBeatState
+class ExtraState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
@@ -33,9 +33,9 @@ class MainMenuState extends MusicBeatState
 	private var camAchievement:FlxCamera;
 	
 	var optionShit:Array<String> = [
-		'story_mode',
-		'freeplay',
-		'others'
+		'2hotbfmix',
+		'sussus-toogus',
+		'back'
 	];
 
 	var kk:FlxSprite;
@@ -73,21 +73,14 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuz/menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuz/Extras/menuGreen'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 		
-		kk = new FlxSprite(-80).loadGraphic(Paths.image('menuz/quadro'));
-		kk.scrollFactor.set(0, yScroll);
-		kk.updateHitbox();
-		kk.screenCenter();
-		kk.antialiasing = ClientPrefs.globalAntialiasing;
-		add(kk);
-		
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuz/menuDesat'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuz/menuPoggers'));
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.updateHitbox();
 		magenta.screenCenter();
@@ -110,7 +103,7 @@ class MainMenuState extends MusicBeatState
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
 			var menuItem:FlxSprite = new FlxSprite(-80);
-			menuItem.frames = Paths.getSparrowAtlas('menuz/huh-' + optionShit[i]);
+			menuItem.frames = Paths.getSparrowAtlas('menuz/' + optionShit[i]);
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
@@ -152,7 +145,7 @@ class MainMenuState extends MusicBeatState
 		#end
 		
 		#if mobile
-		addVirtualPad(UP_DOWN, A_B);
+		addVirtualPad(UP_DOWN, A);
 		#end
 
 		super.create();
@@ -233,12 +226,26 @@ class MainMenuState extends MusicBeatState
 
 								switch (daChoice)
 								{
-									case 'story_mode':
-										MusicBeatState.switchState(new StoryMenuState());
-									case 'freeplay':
-										MusicBeatState.switchState(new FreeplayAteuwuState());
-									case 'others':
-										MusicBeatState.switchState(new OthersState());
+									case '2hotbfmix':
+										PlayState.storyPlaylist = ['2hotbfmix'];
+										PlayState.isStoryMode = true;
+
+										PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '-hard', PlayState.storyPlaylist[0].toLowerCase());
+										PlayState.campaignScore = 0;
+										PlayState.campaignMisses = 0;
+										LoadingState.loadAndSwitchState(new PlayState(), true);
+										FreeplayState.destroyFreeplayVocals();
+									case 'sussus-toogus':
+										PlayState.storyPlaylist = ['sussus-toogus'];
+										PlayState.isStoryMode = true;
+
+										PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '-hard', PlayState.storyPlaylist[0].toLowerCase());
+										PlayState.campaignScore = 0;
+										PlayState.campaignMisses = 0;
+										LoadingState.loadAndSwitchState(new PlayState(), true);
+										FreeplayState.destroyFreeplayVocals();
+									case 'back':
+										MusicBeatState.switchState(new MainMenuState.hx());
 								}
 							});
 						}

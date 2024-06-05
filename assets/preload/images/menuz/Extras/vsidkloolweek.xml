@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="vsidkloolweek.png" width="999" height="76">
+  <SubTexture name="vsidkloolweek white0000.png" x="0" y="0"  width="513" height="76" frameX="-11" frameY="-405" frameWidth="1286" frameHeight="730"/>
+  <SubTexture name="vsidkloolweek basic0000.png" x="513" y="0"  width="486" height="6" frameX="-24" frameY="-477" frameWidth="1286" frameHeight="730"/>
+</TextureAtlas>
